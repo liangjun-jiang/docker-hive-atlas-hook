@@ -22,7 +22,7 @@ services:
     ports:
       - "50075:50075"
   hive-server:
-    image: ljiang/hive:2.3.2-postgresql-metastore
+    image: ljiang/hive:2.3.2-postgresql-metastore-kafka-zookeeper-atlas-hive-hook
     env_file:
       - ./hadoop-hive.env
     environment:
